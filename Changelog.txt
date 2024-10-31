@@ -1,0 +1,75 @@
+$Id: Changelog.txt 1468231 2016-08-05 05:24:27Z hwde $
+
+2016-08-05
+- fix php54 strict error
+
+2016-08-04
+- test & confirm working with WP 4.5.3
+- add support for revive async adserver adtag
+
+2014-09-06
+- test & confirm working with WP 4.0
+
+2013-04-27
+- add a fix for multisite WP
+  thanks to alpha1beta, see
+  http://wordpress.org/support/topic/does-not-work-on-multisite-with-fix
+
+2012-10-14
+- Introduce plugin translation, added
+  german translation
+- move some admin stuff to a different file
+  to reduce frontend load time
+
+2010-06-05
+- Tested plugin with WP 3.0 RC2
+- allow to add the category of a post into
+  the adrequest (thanks to Nick, edditor)
+- allow to add the "tags" into the adrequest
+- don't add the title to sidebar when empty
+- optionally add a <br /> after a sidebar banner
+
+2010-01-20:
+- Added a global config option to block duplicate
+  banners on a same webpage
+
+2009-12-19:
+- Verified that plugin works with WordPress 2.9
+- Fixed issue of a missing adserver-url in settings.
+
+2009-11-13:
+
+- Add posibility to test adserver url in admin settings.
+
+- Allow to pass custom key/values of current posts
+  into the ad-request which can be targeted in
+  openx adserver (i.e. with Site:source or
+  Site:variable)
+
+- tested with wordpress 2.8.6
+
+2009-09-06:
+
+When using the widget in a sidebar, allow to
+specify the alignment for the ads.
+
+2009-09-02:
+
+Add global function get_openx_zone() so
+the plugin can be used from within a template.
+Register & move plugins repository to wordpres.org
+
+2009-01-09:
+
+Fixed small bug to replace more than one {openx:...}
+magics in a single post.
+
+2008-09-06: 
+
+Added support for multiple widget instances,
+so the widget can be added to a sidebar more
+than once, and also to different sidebars.
+
+2008-06-??
+
+Initial version

@@ -1,0 +1,64 @@
+/***
++---------------------------------------------------------------------------+
+| Copyright (c) 2003-2008 OpenX Limited                                     |
+| For contact details, see: http://www.openx.org/                           |
+| Copyright (c) 2009 Heiko Weber                                            |
+|                                                                           |
+| This program is free software; you can redistribute it and/or modify      |
+| it under the terms of the GNU General Public License as published by      |
+| the Free Software Foundation; either version 2 of the License, or         |
+| (at your option) any later version.                                       |
+|                                                                           |
+| This program is distributed in the hope that it will be useful,           |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of            |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             |
+| GNU General Public License for more details.                              |
+|                                                                           |
+| You should have received a copy of the GNU General Public License         |
+| along with this program; if not, write to the Free Software               |
+| Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA |
++---------------------------------------------------------------------------+
+$Id: INSTALL.txt 612311 2012-10-14 15:45:40Z hwde $
+*/
+
+This is a plugin/widget for the WordPress publishing platform. It will let
+you serve banners at your WordPress webpages with ease. This document
+describe how to get started.
+
+Installation
+------------
+
+1) Copy the file openx-wp-widget.php into the /wp-content/plugins or
+   add this plugin to your wordpress from the repository.
+
+2) Login into your WordPress administration account and activate the
+   plugin "openxwpwidget" at the plugin management page. This will add
+   a new menu item OpenX-WP to the administration pages, below settings.
+
+3) Change to the OpenX-WP setup page and type the url to the OpenX adserver
+   you like to use into the textfield. You have to include the path to
+   to the delivery folder, i.e. adserver.example.com/www/delivery
+
+4) You are now ready to add banner-tags to your content. If you havn't 
+   already, create a zone at your OpenX-adserver and write down the
+   zoneID. A banner-tag look like {openx:NNN}, NNN is your zoneID, i.e.
+   use {openx:17} for zoneID 17. You can add banner-tags anywhere into
+   your content, except the sidebar(s). See 5) how to add banners to
+   the sidebar.
+
+5) To add banners to a sidebar, first you have to add the OpenX-WP-Widget
+   too the sidebar. This can be done at the Design / Widget pages in your
+   WordPress administration. You'll find there a list of already installed
+   widgets. Click at "Add" of OpenX Widget to serve banners from within
+   the sidebar. OpenX-Widget appears below "Current Widgets".
+
+6) Click at "Edit" of OpenX Widget.
+
+7) Select how many rows of bannes you like to serve in your sidebar. If
+   your OpenX-Zone serve skyscrapers, usually you choose just 1. For each
+   row of banners you type the zoneID into the zoneID textfield.
+
+8) Don't forget to "Save Changes".
+
+9) done.
+

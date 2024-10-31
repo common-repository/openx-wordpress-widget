@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-14 17:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../admin.php:57
+msgid "AdServer Settings"
+msgstr ""
+
+#: ../admin.php:60
+msgid "Url to OpenX-AdServer:"
+msgstr ""
+
+#: ../admin.php:64
+msgid ""
+"Type the url (without http://) and path to your OpenX-Adserver delivery "
+"directory into the textfield.<br />A sample url and path could like like: "
+"<b>ads.openx.org/delivery.</b><br />"
+msgstr ""
+
+#: ../admin.php:70
+msgid "Test zone-id:"
+msgstr ""
+
+#: ../admin.php:74
+msgid ""
+"To test your above url and path you can type a zone-id of your adserver "
+"here. When you click 'Save' the plugin will generate an invocation code of "
+"that zone and add it here (below)."
+msgstr ""
+
+#: ../admin.php:81
+msgid "Test result:"
+msgstr ""
+
+#: ../admin.php:86
+#, possible-php-format
+msgid ""
+"The inserted invocation code points to url: <a href='%s' target='_blank'>%s</"
+"a><br />\n"
+"Please note, that you only see a banner when you setup the zone correctly "
+"within your openx adserver AND any banner match the delivery limitations. "
+"Expert only: You may simply click on the link above, it will open a new "
+"browser window. The url and path is wrong when the page is just blank. It "
+"should show you some 'inscrutable' javascript code ..."
+msgstr ""
+
+#: ../admin.php:93
+msgid "Ad-Request Settings"
+msgstr ""
+
+#: ../admin.php:96
+msgid "Custom fields:"
+msgstr ""
+
+#: ../admin.php:100
+#, possible-php-format
+msgid ""
+"The plugin can add custom keys/values into the ad-request. This will allow "
+"you to add some special targeting rules to your banners so they might match "
+"to the current posts much better. Please list the custom keys here (comma "
+"separated) which the plugin should observe.<br /><br />Example:<br />A "
+"standard openx parameter is named <b>source</b> - so when you type 'source' "
+"here and your posts contain a custom key 'source', the plugin will append "
+"all values of the custom key 'source' to the ad-request (multiple values are "
+"joined by '_', which allow you to specify targeting rules 'contains'. Lets "
+"assume your post contains the following values for source: 'motorbike', "
+"'car' and 'driving'. As a result the plugin will add "
+"'source=_motorbike_car_driving_' to the ad-request. A banner with the "
+"targeting rule: 'Site:source' contains '_motorbike_' will match the rule and "
+"can be displayed.<br /><br />Please read further information about openx "
+"targeting rules <a href='%s' target='_blank'>here</a>."
+msgstr ""
+
+#: ../admin.php:106
+msgid "Category:"
+msgstr ""
+
+#: ../admin.php:110
+msgid ""
+"The plugin can also add the categories of the posts or page into the ad-"
+"request. This work similar to the custom fields. Please specify the name of "
+"the parameter which should be used for the categories. (No name disable this "
+"feature)."
+msgstr ""
+
+#: ../admin.php:115
+msgid "Tags:"
+msgstr ""
+
+#: ../admin.php:119
+msgid ""
+"The plugin can also add the tags of the posts or page into the ad-request. "
+"This work similar to the custom fields or categories. Please specify the "
+"name of the parameter which should be used for the tags. (No name disable "
+"this feature)."
+msgstr ""
+
+#: ../admin.php:124
+msgid "Block duplicate ads:"
+msgstr ""
+
+#: ../admin.php:128
+msgid "Don't allow the same banner twince on a webpage"
+msgstr ""
+
+#: ../admin.php:130
+msgid ""
+"By default openx is allowed to serve the same banner again to other (or "
+"same) zones on a webpage. Adding 'block=1' to the ad-request tell's the "
+"adserver to keep track what has been served so far - and so disallow the "
+"same banner."
+msgstr ""
+
+#: ../admin.php:136
+msgid "Hints"
+msgstr ""
+
+#: ../admin.php:139
+msgid "Sidebar"
+msgstr ""
+
+#: ../admin.php:140
+msgid ""
+"The plugin adds a new widget 'OpenX Widget' to your wordpress. You may add "
+"the widget to your sidebars."
+msgstr ""
+
+#: ../admin.php:144
+msgid "Ads within posts"
+msgstr ""
+
+#: ../admin.php:146
+msgid ""
+"The plugin automatically adds a filter to your wordpress, any occurence of "
+"<b>{openx:N}</b> within the posts (whereas <b>N</b> is a zone-id of your "
+"adserver) will be replaced with an ad-request to your adserver (using the "
+"specified zone-id)."
+msgstr ""
+
+#: ../admin.php:282
+#, possible-php-format
+msgid "ZoneID for Banner %d"
+msgstr ""
+
+#: ../admin.php:283
+#, possible-php-format
+msgid "append a %s"
+msgstr ""
+
+#: ../openx-wp-widget.php:377
+msgid "Widget to serve OpenX banners from sidebars"
+msgstr ""
+
+#: ../openx-wp-widget.php:379
+msgid "OpenX Widget"
+msgstr ""
